@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundSamokatus"
+    tools:context=".samokatus.SamokatusActivity">
+
+    <ImageView
+        android:id="@+id/iv_toolbar_title_samokatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:contentDescription="@string/logo"
+        android:src="@drawable/ic_logo_samokatus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_toolbar_profile_samokatus"
+        android:layout_width="19dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="24dp"
+        android:contentDescription="@string/profile"
+        android:src="@drawable/ic_profile_samokatus"
+        app:layout_constraintBottom_toBottomOf="@id/iv_toolbar_title_samokatus"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/iv_toolbar_title_samokatus" />
+
+    <ImageView
+        android:id="@+id/iv_toolbar_search_samokatus"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="24dp"
+        android:contentDescription="@string/search"
+        android:src="@drawable/ic_search_samokatus"
+        app:layout_constraintBottom_toBottomOf="@id/iv_toolbar_title_samokatus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/iv_toolbar_title_samokatus" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_categories_samokatus"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:layout_marginTop="23dp"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintTop_toBottomOf="@id/iv_toolbar_title_samokatus"
+        tools:listitem="@layout/list_item_category_samokatus" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_tours_samokatus"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rv_categories_samokatus"
+        tools:listitem="@layout/list_item_samokatus"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

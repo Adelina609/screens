@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".bank.BankActivity">
+
+    <ScrollView
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bottom_nav_bank">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <ImageView
+                android:contentDescription="@string/avatar"
+                android:id="@+id/iv_avatar_bank"
+                android:layout_height="24dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_width="24dp"
+                android:src="@drawable/ic_avatar_bank"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                style="@style/TextRegularBank.Black"
+                android:id="@+id/tv_name_bank"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_width="wrap_content"
+                android:letterSpacing="0.04"
+                android:text="@string/konstantin"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_avatar_bank"
+                app:layout_constraintStart_toEndOf="@+id/iv_avatar_bank"
+                app:layout_constraintTop_toTopOf="@+id/iv_avatar_bank" />
+
+            <ImageView
+                android:contentDescription="@string/chat"
+                android:id="@+id/img_chat_bank"
+                android:layout_height="24dp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginTop="16dp"
+                android:layout_width="24dp"
+                android:src="@drawable/ic_chat_bank"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:contentDescription="@string/ellipse"
+                android:id="@+id/img_ellipse_bank"
+                android:layout_height="4dp"
+                android:layout_marginEnd="14dp"
+                android:layout_marginTop="16dp"
+                android:layout_width="4dp"
+                android:src="@drawable/ic_ellipse_bank"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                style="@style/TextRegularBank.TextGrayBank"
+                android:id="@+id/tv_available_bank"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="88dp"
+                android:layout_width="0dp"
+                android:letterSpacing="0.025"
+                android:text="@string/available"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                style="@style/TextMediumBank.Black"
+                android:id="@+id/tv_balance_bank"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:letterSpacing="0.025"
+                android:text="3 290,75 ₽"
+                android:textSize="34sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_available_bank" />
+
+            <ImageView
+                android:contentDescription="@string/ellipse"
+                android:id="@+id/img_info_bank"
+                android:layout_height="20dp"
+                android:layout_marginEnd="18dp"
+                android:layout_width="20dp"
+                android:src="@drawable/ic_info_bank"
+                android:tint="@color/colorGrayDefaultBank"
+                app:layout_constraintBottom_toBottomOf="@id/tv_balance_bank"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tv_balance_bank" />
+
+            <TextView
+                style="@style/TextRegularBank.TextGrayBank"
+                android:id="@+id/tv_whyy_bank"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_width="wrap_content"
+                android:text="@string/whyy"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_balance_bank" />
+
+            <View
+                android:background="@color/colorBlack16Bank"
+                android:layout_height="1dp"
+                android:layout_width="0dp"
+                app:layout_constraintBottom_toBottomOf="@id/btn_take_money_bank"
+                app:layout_constraintEnd_toStartOf="@id/btn_take_money_bank"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/btn_take_money_bank" />
+
+            <View
+                android:background="@color/colorBlack16Bank"
+                android:layout_height="1dp"
+                android:layout_width="0dp"
+                app:layout_constraintBottom_toBottomOf="@id/btn_take_money_bank"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/btn_take_money_bank"
+                app:layout_constraintTop_toTopOf="@id/btn_take_money_bank" />
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/Widget.MaterialComponents.Button"
+                android:background="@color/colorPrimaryBank"
+                android:fontFamily="@font/roboto_medium"
+                android:id="@+id/btn_take_money_bank"
+                android:layout_height="64dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:layout_width="0dp"
+                android:text="@string/take_money"
+                android:textAlignment="textStart"
+                android:textAllCaps="true"
+                app:cornerRadius="32dp"
+                app:icon="@drawable/ic_arrow_bank"
+                app:iconGravity="end"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_whyy_bank" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:background="@drawable/background_layout_important_bank"
+                android:id="@+id/layout_important_bank"
+                android:layout_height="78dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:layout_width="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btn_take_money_bank">
+
+                <View
+                    android:background="@drawable/background_circle_bank"
+                    android:id="@+id/view_important_icon_background_bank"
+                    android:layout_height="46dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_width="46dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:contentDescription="@string/important"
+                    android:id="@+id/iv_important_icon_bank"
+                    android:layout_height="18dp"
+                    android:layout_width="20dp"
+                    android:src="@drawable/ic_important_bank"
+                    android:tint="@color/colorGrayDefaultBank"
+                    app:layout_constraintBottom_toBottomOf="@id/view_important_icon_background_bank"
+                    app:layout_constraintEnd_toEndOf="@id/view_important_icon_background_bank"
+                    app:layout_constraintStart_toStartOf="@id/view_important_icon_background_bank"
+                    app:layout_constraintTop_toTopOf="@id/view_important_icon_background_bank" />
+
+                <TextView
+                    style="@style/TextRegularBank"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="end"
+                    android:id="@+id/tv_important_title_bank"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_width="0dp"
+                    android:text="@string/tomorrow_salary"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorGrayDefaultBank"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/view_important_icon_background_bank"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    style="@style/TextMediumBank"
+                    android:gravity="end"
+                    android:id="@+id/tv_important_money_bank"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="0dp"
+                    android:text="+ 30 000 ₽"
+                    android:textColor="@color/colorAccentBank"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="@id/tv_important_title_bank"
+                    app:layout_constraintStart_toEndOf="@id/view_important_icon_background_bank"
+                    app:layout_constraintTop_toBottomOf="@id/tv_important_title_bank" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_operations_bank"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/layout_important_bank"
+                tools:listitem="@layout/list_item_operation_value_bank"
+            />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav_bank"
+        android:layout_height="52dp"
+        android:layout_width="match_parent"
+        app:itemIconTint="@drawable/selector_bottom_bank"
+        app:itemTextColor="@drawable/selector_bottom_bank"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

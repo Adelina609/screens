@@ -1,3 +1,29 @@
 <resources>
-    <string name="app_name">Screens</string>
+    <string name="app_name">Verstka</string>
+    <string name="main_bottom">Главная</string>
+    <string name="main_events">События</string>
+    <string name="main_settings">Настройки</string>
+    <string name="avatar">Аватар</string>
+    <string name="konstantin">Константин</string>
+    <string name="ellipse">Эллипс</string>
+    <string name="chat">Чат</string>
+    <string name="available">Доступно</string>
+    <string name="whyy">Почему столько</string>
+    <string name="take_money">Забрать деньги</string>
+    <string name="to_bank">В банк</string>
+    <string name="to_shop">В магазин</string>
+    <string name="to_samokatus">В самокатус</string>
+    <string name="important">Важно</string>
+    <string name="tomorrow_salary">Завтра день зарплаты</string>
+    <string name="operation">Операция</string>
+    <string name="logo">Лого</string>
+    <string name="profile">Профиль</string>
+    <string name="search">Поиск</string>
+    <string name="paying">Оплата</string>
+    <string name="card_pay">Картой **** **** **** ***24</string>
+    <string name="white_cup">Кружка белая</string>
+    <string name="delivery_details">Доставка</string>
+    <string name="delivery_by_courier">Экспресс доставка курьером</string>
+    <string name="delivery_more">Доставка</string>
+    <string name="expr_courier">Экспресс доставка курьером</string>
 </resources>

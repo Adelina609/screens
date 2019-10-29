@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="58dp">
+
+    <View
+        android:id="@+id/view_operation_icon_circle_item_bank"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/background_circle_bank"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_operation_icon_item_bank"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:contentDescription="@string/operation"
+        app:layout_constraintBottom_toBottomOf="@id/view_operation_icon_circle_item_bank"
+        app:layout_constraintEnd_toEndOf="@id/view_operation_icon_circle_item_bank"
+        app:layout_constraintStart_toStartOf="@id/view_operation_icon_circle_item_bank"
+        app:layout_constraintTop_toTopOf="@id/view_operation_icon_circle_item_bank"
+        tools:src="@drawable/ic_out_bank" />
+
+    <TextView
+        android:id="@+id/tv_operation_title_item_bank"
+        style="@style/TextRegularBank"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:lines="2"
+        android:textSize="14sp"
+        android:textColor="@color/colorBlackBank"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/view_operation_icon_circle_item_bank"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="SOME TEXT JOJOJOJO jojojojojojojojojo"/>
+
+    <TextView
+        android:id="@+id/tv_operation_money_item_bank"
+        style="@style/TextRegularBank"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:gravity="end"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_operation_title_item_bank"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="- 16 085,75 ₽"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

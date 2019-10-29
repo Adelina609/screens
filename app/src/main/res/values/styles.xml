@@ -1,11 +1,82 @@
 <resources>
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimaryBank</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkBank</item>
+        <item name="colorAccent">@color/colorAccentBank</item>
     </style>
 
+    <style name="BankTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimaryBank</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkBank</item>
+        <item name="colorAccent">@color/colorAccentBank</item>
+    </style>
+
+    <style name="SamokatusTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimarySamokatus</item>
+        <item name="colorPrimaryDark">@color/colorPrimarySamokatus</item>
+        <item name="colorAccent">@color/colorAccentSamokatus</item>
+    </style>
+
+    <style name="TextRegularBank" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/roboto</item>
+    </style>
+
+    <style name="TextRegularBank.Black">
+        <item name="android:color">@color/colorBlackBank</item>
+    </style>
+
+    <style name="TextMediumBank" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <style name="TextMediumBank.Black">
+        <item name="android:color">@color/colorBlackBank</item>
+    </style>
+
+    <style name="TextRegularBank.TextGrayBank">
+        <item name="android:textColor">@color/colorBlack32Bank</item>
+    </style>
+
+    <style name="TextRegularSamokatus" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/roboto</item>
+    </style>
+    <!--&lt;!&ndash; Base application theme. &ndash;&gt;-->
+    <!--<style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">-->
+        <!--&lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+        <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <!--<item name="colorAccent">@color/colorAccent</item>-->
+        <!--<item name="buttonNormalColor">@color/colorAccent</item>-->
+    <!--</style>-->
+
+    <style name="SecondaryTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorRed</item>
+        <item name="colorPrimaryDark">@color/colorRedDark</item>
+        <item name="colorAccent">@color/colorAccentYellow</item>
+        <!--<item name="buttonNormalColor">@color/colorRedDark</item>-->
+    </style>
+
+    <style name="DefaultTextTheme">
+        <item name="android:textColor">@color/colorTextDefault</item>
+        <item name="android:fontFamily">@font/roboto</item>
+    </style>
+
+    <style name="SecondaryTextTheme">
+        <item name="android:textColor">@color/colorTextSecondary</item>
+        <item name="android:fontFamily">@font/roboto</item>
+    </style>
+
+    <!--<style name="LightTheme" parent="AppTheme">
+        <item name="textColor">@color/colorTextDefault</item>
+        <item name="bgColor">#FFFFFF</item>
+        <item name="secondaryTextColor">@color/colorTextSecondary</item>
+    </style>
+
+    <style name="DarkTheme" parent="AppTheme">
+        <item name="textColor">#FFFFFF</item>
+        <item name="bgColor">#353434</item>
+        <item name="secondaryTextColor">#AAAAAA</item>
+    </style>-->
 </resources>
